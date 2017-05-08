@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 
-namespace SuperSplashCurl
+namespace SuperSplashCurl.Boards
 {
     public class BoardRenderer : IBoardRenderer
     {

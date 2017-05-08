@@ -1,4 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
+using SuperSplashCurl.Boards;
+using SuperSplashCurl.Curls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,7 @@ namespace SuperSplashCurl
         public static Dictionary<GamePlayer, int> Players { get; private set; } = new Dictionary<GamePlayer, int>();
         public static Dictionary<GamePlayer, Queue<GameCurl>> NextCurls { get; private set; } = new Dictionary<GamePlayer, Queue<GameCurl>>();
         public static int WinningScore { get; private set; } = 0;
+        public static GameBoard Board { get; private set; }
         
 
         public static void InitializePlayer(string name, int faceIndex, Color color)
@@ -23,6 +26,11 @@ namespace SuperSplashCurl
             {
                 QueueNextCurl(player);
             }
+        }
+
+        internal static void InitializeBoard()
+        {
+            Board = GameBoard.Create<BoardRenderer>(10, 10);
         }
 
         public static void Reset()

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperSplashCurl
+namespace SuperSplashCurl.Boards
 {
     public interface IBoardRenderer
     {
