@@ -59,6 +59,8 @@
     <Compile Include="Scenes\SceneBase.cs" />
     <Compile Include="Scenes\SceneManager.cs" />
     <Compile Include="Scenes\SceneSession.cs" />
+    <Compile Include="Scenes\SceneSessionPreperation.cs" />
+    <Compile Include="Scenes\SceneTitle.cs" />
     <Compile Include="SessionManager.cs" />
     <Compile Include="Tile.cs" />
   </ItemGroup>

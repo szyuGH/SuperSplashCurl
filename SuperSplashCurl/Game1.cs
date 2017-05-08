@@ -57,12 +57,6 @@ namespace SuperSplashCurl
         {
             GameSettings.DefaultViewport = GraphicsDevice.Viewport;
             Cache.Initialize(Content);
-            
-            
-
-            
-
-            //Camera2D.Bounding = board.GetCameraBounding(gameViewport);
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             
@@ -106,7 +100,6 @@ namespace SuperSplashCurl
         {
             GraphicsDevice.Viewport = GameSettings.DefaultViewport;
             GraphicsDevice.Clear(Color.Black);
-
             
             SceneManager.Render(spriteBatch, gameTime);
 
